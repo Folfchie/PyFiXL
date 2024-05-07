@@ -2,6 +2,8 @@
 
 **PynanceXL** is a simple program created to process financial Excel workbooks.
 
+**Note:** This program is not affiliated with the `pynance` python library. 
+
 ## Prerequisites
 
 - **Python 3** with **openpyxl**
@@ -15,7 +17,7 @@ Download the PynanceXL repository from Github. You now have two choices.
 Simply run `main.py` using your desired Python interpreter. This is best if you just want to try out PynanceXL.
 
 ### Option B: Custom bash script (Linux)
-Included in the zip is a file named `pynance`. This is a custom bash script meant to be stored in `/usr/local/bin` on Debian distros. 
+In the **PynanceXL** repository, there is a file named `pynance`. This is a custom bash script meant to be stored in `/usr/local/bin` on Debian distros.  This will be renamed in a later release to avoid confusion and conflict with the `pynance` python library.
 
 To properly configure this, move the `pynanceXL` folder to `/usr/local/bin`. Then, from within the `pynanceXL` folder, move the file `pynance`
 to `/usr/local/bin`. If done correctly, you should have a `pynance` file and a `pynanceXL` folder in `/usr/local/bin`.
@@ -37,10 +39,12 @@ personal finance program that utilizes Excel files.
 - `mtd_totals.xlsx`
 | Leave empty. Month-to-date totals go here.
 
-You may alter the filenames, make copies, and enter data in the cells as you see fit. Please 
-refrain from altering any formatting, this may break the program.
+These serve as templates, copy them and rename them something descriptive, such as `2024-04-income.xlsx`. 
+
+Be sure to run `pynanceXL` in the same directory as the files you wish to process.
+
+Please refrain from altering any formatting, this may break the program.
 
 ## Bug reporting
 
 Report any bugs and/or suggestions to [Folfchie](https://www.github.com/Folfchie) on Github.
- 
