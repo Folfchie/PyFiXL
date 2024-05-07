@@ -1,4 +1,4 @@
-# PynanceXL v0.1
+# PynanceXL v0.1-beta
 
 **PynanceXL** is a simple program created to process financial Excel workbooks.
 
@@ -9,25 +9,24 @@
 
 ## Installation
 
-Download `PynanceXL1.0.zip` and extract it. You now have two choices.
+Download the PynanceXL repository from Github. You now have two choices.
 
 ### Option A: Use Python Interpreter
 Simply run `main.py` using your desired Python interpreter. This is best if you just want to try out PynanceXL.
 
-### Option B: Custom bash script
+### Option B: Custom bash script (Linux)
 Included in the zip is a file named `pynance`. This is a custom bash script meant to be stored in `/usr/local/bin` on Debian distros. 
 
-To properly configure this, copy `pynance` and the folder `PynanceXLv0.1` to the aforementioned directory. Ensure that the file `pynance` is **outside** of the Pynance folder.
+To properly configure this, move the `pynanceXL` folder to `/usr/local/bin`. Then, from within the `pynanceXL` folder, move the file `pynance`
+to `/usr/local/bin`. If done correctly, you should have a `pynance` file and a `pynanceXL` folder in `/usr/local/bin`.
 
 Next, run the command `sudo chmod +x pynance`.
 
-If done correctly, you can now use the bash command `pynance` to run the program.
+Now you can now use the bash command `pynance` to run the program.
 
 ## Usage
 I created this program as I desired a basic, simple, automated
 personal finance program that utilizes Excel files.
-
-To run the program, run `main.py` using your favorite Python interpreter.
 
 3 example workbooks are provided in the zip file.
 
