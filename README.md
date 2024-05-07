@@ -1,4 +1,4 @@
-# PynanceXL v0.1-beta
+# PynanceXL v0.1.0-beta
 
 **PynanceXL** is a simple program created to process financial Excel workbooks.
 
