@@ -1,4 +1,4 @@
-# PynanceXL v0.1.0-beta
+# PynanceXL v0.2.0-beta
 
 **PynanceXL** is a simple program created to process financial Excel workbooks.
 
@@ -11,40 +11,78 @@
 
 ## Installation
 
-Download the PynanceXL repository from Github. You now have two choices.
+Download the **PynanceXL** repository from Github. You now have two choices.
 
 ### Option A: Use Python Interpreter
 Simply run `main.py` using your desired Python interpreter. This is best if you just want to try out PynanceXL.
 
-### Option B: Custom bash script (Linux)
-In the **PynanceXL** repository, there is a file named `pynance`. This is a custom bash script meant to be stored in `/usr/local/bin` on Debian distros.  This will be renamed in a later release to avoid confusion and conflict with the `pynance` python library.
+### Option B: Custom bash script (Debian)
+**Note**: This method requires the use of `sudo` user privileges.
 
-To properly configure this, move the `pynanceXL` folder to `/usr/local/bin`. Then, from within the `pynanceXL` folder, move the file `pynance`
-to `/usr/local/bin`. If done correctly, you should have a `pynance` file and a `pynanceXL` folder in `/usr/local/bin`.
+#### Step 1:
+In the **PynanceXL** repository is a bash script named `pynanceXL`. Copy this file to `/usr/local/bin`.
 
-Next, run the command `sudo chmod +x pynance`.
+#### Step 2:
+If needed, make the file executable by running the command `chmod +x pynanceXL`. This will make the file executable. 
+Now the `pynanceXL` command is ready to use.
 
-Now you can now use the bash command `pynance` to run the program.
+#### Step 3:
+Run the command `pynanceXL -i` and you will be prompted to enter the path of the **PynanceXL** repository. 
+This will be wherever you downloaded it to, such as `/home/user/Downloads/PynanceXL`.
+
+#### Check if PynanceXL is installed
+To check if **PynanceXL** is properly installed, run the command `pynanceXL -r`.
+If you receive the error that `/usr/local/bin/PynanceXL/main.py` does not exist, try **Step 3** again and ensure the path is entered correctly.
 
 ## Usage
 I created this program as I desired a basic, simple, automated
 personal finance program that utilizes Excel files.
 
-3 example workbooks are provided in the zip file.
+### Files
+Included with **PynanceXL** is a folder named `templates`.
+There are four workbook templates for you to copy and use.
 
 - `income.xlsx`
 | Enter your income figures here.
 - `expenses.xlsx`
 | Enter your expense figures here.
-- `mtd_totals.xlsx`
+- `jan-mtd.xlsx`
 | Leave empty. Month-to-date totals go here.
+- `20xx-ytd.xlsx`
+| Leave empty. Data stored here is pulled from `mtd` worksheets.
 
-These serve as templates, copy them and rename them something descriptive, such as `2024-04-income.xlsx`. 
+Rename the workbooks to suit your organization tastes. 
+Bear in mind that the `mtd` and `ytd` workbooks should follow
+a particular formatting scheme in order for **PynanceXL** to read them.
+Examples below:
+- `2024-ytd.xlsx`
+- `mar-mtd.xlsx`
+- `jun-mtd.xlsx`
 
-Be sure to run `pynanceXL` in the same directory as the files you wish to process.
+It is discouraged to alter workbook formatting,
+as this may break program. Do so at your own risk.
 
-Please refrain from altering any formatting, this may break the program.
+### Commands
 
+#### Bash Commands
+- `pynanceXL -h` 
+| Displays a list of `pynanceXL` bash commands.
+- `pynanceXL -r`
+| If `pynanceXL` is installed, runs the program.
+- `pynanceXL -i`
+| Installs the program into `/usr/local/bin`
+
+#### Python Commands
+- `help`
+| Prints of full list of `pynanceXL` python commands.
+- `cd`
+| Change current working directory.
+- `cwd`
+| Print current working directory.
+- `ls`
+| Print files and directories in CWD
+
+For a full list of commands, feel free to try out **PynanceXL**.
+Then, run the `help` command.
 ## Bug reporting
-
 Report any bugs and/or suggestions to [Folfchie](https://www.github.com/Folfchie) on Github.

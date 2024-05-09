@@ -1,0 +1,44 @@
+#!/bin/bash
+Run()
+{
+   #Run Program
+   python3 /usr/local/bin/PynanceXL/main.py
+}
+Install()
+{
+   #Copy files to /usr/local/bin
+   read -p "Please enter path of PynanceXL directory: " dirname
+   cp -r "$dirname" /usr/local/bin
+   echo "Operation 'Install' has finished. Use pynanceXL -r to run the program."
+}
+Help()
+{
+   # Display Help
+   echo
+   echo "These commands will help you install and use PynanceXL."
+   echo
+   echo "Syntax: pynanceXL [-h|r|i]"
+   echo "options:"
+   echo "h     Print this Help."
+   echo "r     Start PynanceXL in CLI."
+   echo "i     Install PynanceXL to usr/local/bin."
+   echo
+}
+
+# Get the options
+while getopts ":hri" option; do
+   case $option in
+      h) # display Help
+         Help
+         exit;;
+      r) # call Run
+         Run
+         exit;;
+      i) # call Install
+         Install
+         exit;;
+     \?) # Invalid option
+         echo "Error: Invalid option"
+         exit;;
+   esac
+done
