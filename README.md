@@ -84,5 +84,10 @@ as this may break program. Do so at your own risk.
 
 For a full list of commands, feel free to try out **PynanceXL**.
 Then, run the `help` command.
+
+## Updating PynanceXL
+To update **PynanceXL**, simply download the latest repository. 
+Then, if needed, refer to **Option B: Step 3** under **Installation**.
+
 ## Bug reporting
 Report any bugs and/or suggestions to [Folfchie](https://www.github.com/Folfchie) on Github.
