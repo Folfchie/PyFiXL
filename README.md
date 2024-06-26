@@ -1,8 +1,6 @@
-# PynanceXL v0.3.0-beta
+# PyFiXL v0.3.0-beta
 
-**PynanceXL** is a simple program created to process financial Excel workbooks.
-
-**Note:** This program is not affiliated with the `pynance` python library. 
+**PyFiXL** is a simple program created to process financial Excel workbooks.
 
 ## Prerequisites
 
@@ -11,35 +9,37 @@
 
 ## Installation
 
-Download the **PynanceXL** repository from Github. You now have two choices.
+Download **PyFiXL** from the `main` branch on Github. You now have two choices.
 
 ### Option A: Use Python Interpreter
-Simply run `main.py` using your desired Python interpreter. This is best if you just want to try out PynanceXL.
+Simply run `main.py` using your desired Python interpreter. This is best if you just want to try out PyFiXL.
 
 ### Option B: Custom bash script (Debian)
 **Note**: This method requires the use of `sudo` user privileges.
 
 #### Step 1:
-In the **PynanceXL** repository is a bash script named `pynanceXL`. Copy this file to `/usr/local/bin`.
+In the **PyFiXL** folder
+ is a bash script named `pyfixl`. Copy this file to `/usr/local/bin`.
 
 #### Step 2:
-If needed, make the file executable by running the command `chmod +x pynanceXL`. This will make the file executable. 
-Now the `pynanceXL` command is ready to use.
+If needed, make the file executable by running the command `chmod +x pyfixl`. This will make the file executable. 
+Now the `pyfixl` command is ready to use.
 
 #### Step 3:
-Run the command `pynanceXL -i` and you will be prompted to enter the path of the **PynanceXL** repository. 
-This will be wherever you downloaded it to, such as `/home/user/Downloads/PynanceXL`.
+Run the command `pyfixl -i` and you will be prompted to enter the path of the **PyFiXL** folder
+. 
+This will be wherever you downloaded it to, such as `/home/user/Downloads/PyFiXL`.
 
-#### Check if PynanceXL is installed
-To check if **PynanceXL** is properly installed, run the command `pynanceXL -r`.
-If you receive the error that `/usr/local/bin/PynanceXL/main.py` does not exist, try **Step 3** again and ensure the path is entered correctly.
+#### Check if PyFiXL is installed
+To check if **PyFiXL** is properly installed, run the command `pyfixl -r`.
+If you receive the error that `/usr/local/bin/PyFiXL/main.py` does not exist, try **Step 3** again and ensure the path is entered correctly.
 
 ## Usage
 I created this program as I desired a basic, simple, automated
 personal finance program that utilizes Excel files.
 
 ### Files
-Included with **PynanceXL** is a folder named `templates`.
+Included with **PyFiXL** is a folder named `templates`.
 There are four workbook templates for you to copy and use.
 
 - `income.xlsx`
@@ -53,7 +53,7 @@ There are four workbook templates for you to copy and use.
 
 Rename the workbooks to suit your organization tastes. 
 Bear in mind that the `mtd` and `ytd` workbooks should follow
-a particular formatting scheme in order for **PynanceXL** to read them.
+a particular formatting scheme in order for **PyFiXL** to read them.
 Examples below:
 - `2024-ytd.xlsx`
 - `mar-mtd.xlsx`
@@ -65,16 +65,16 @@ as this may break program. Do so at your own risk.
 ### Commands
 
 #### Bash Commands
-- `pynanceXL -h` 
-| Displays a list of `pynanceXL` bash commands.
-- `pynanceXL -r`
-| If `pynanceXL` is installed, runs the program.
-- `pynanceXL -i`
+- `pyfixl -h` 
+| Displays a list of `pyfixl` bash commands.
+- `pyfixl -r`
+| If `pyfixl` is installed, runs the program.
+- `pyfixl -i`
 | Installs the program into `/usr/local/bin`
 
 #### Python Commands
 - `help`
-| Prints of full list of `pynanceXL` python commands.
+| Prints of full list of `pyfixl` python commands.
 - `cd`
 | Change current working directory.
 - `cwd`
@@ -82,11 +82,11 @@ as this may break program. Do so at your own risk.
 - `ls`
 | Print files and directories in CWD
 
-For a full list of commands, feel free to try out **PynanceXL**.
+For a full list of commands, feel free to try out **PyFiXL**.
 Then, run the `help` command.
 
-## Updating PynanceXL
-To update **PynanceXL**, simply download the latest repository. 
+## Updating PyFiXL
+To update **PyFiXL**, simply download the latest version from Github. 
 Then, if needed, refer to **Option B: Step 3** under **Installation**.
 
 ## Bug reporting
