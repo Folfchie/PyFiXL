@@ -61,9 +61,6 @@ help: Displays a list of commands and usages. Usage: help
                 
             case "ls":
                 print(os.listdir())
-
-            case "debug":
-                mods.open_test_window()
                 
             case _:
                 print(f"\nCommand '{choice}' not found")

@@ -1,8 +1,8 @@
 import openpyxl as xl
 import os
 import shutil
-from tkinter import *
-from tkinter import ttk
+# Will use later:
+# import openpyxl.utils.exceptions
 
 
 def process_income_workbook(filename):
@@ -146,11 +146,3 @@ def process_ytd_figures(mtd_dir, ytd_dir, year):
     os.remove(ytd_wb_name)
     os.chdir(start_dir)
     print(f"\nThe operation on {ytd_wb_name} has finished!")
-
-def open_test_window():
-    root = Tk()
-    frm = ttk.Frame(root, padding=10)
-    frm.grid()
-    ttk.Label(frm, text="Hello World!").grid(column=0, row=0)
-    ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=0)
-    root.mainloop()
